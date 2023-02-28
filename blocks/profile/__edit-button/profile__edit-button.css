@@ -19,11 +19,29 @@
 }
 
 .profile__edit-button::before {
-  content: url(../../../images/edit-button.svg);
+  background: url(../../../images/edit-button.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 24px;
   height: 100%;
+  max-height: 24px;
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__edit-button {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    vertical-align: text-top;
+  }
+  .profile__edit-button::before {
+    max-width: 18px;
+    max-height: 18px;
+  }
 }

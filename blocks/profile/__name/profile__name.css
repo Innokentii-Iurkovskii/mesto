@@ -5,3 +5,10 @@
   line-height: 1.14;
   margin: 0 0 16px;
 }
+
+@media screen and (max-width: 767px) {
+  .profile__name {
+    font-size: 27px;
+    margin: 0 0 14px;
+  }
+}
