@@ -1,0 +1,6 @@
+.page {
+  font-family: var(--userfont);
+  color: var(--text-color);
+  background: #000000;
+  min-width: 320px;
+}
