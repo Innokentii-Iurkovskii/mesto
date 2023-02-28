@@ -1,0 +1,6 @@
+.photo-gallery__image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,6 @@
+.photo-gallery__item {
+  background: #ffffff;
+  min-height: 361px;
+  border-radius: 10px;
+  overflow: hidden;
+}
