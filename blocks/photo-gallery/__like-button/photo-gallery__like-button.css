@@ -3,6 +3,8 @@
   outline: none;
   padding: 0;
   background: none;
+  -webkit-transition: opacity ease-in-out .2s;
+  -o-transition: opacity ease-in-out .2s;
   transition: opacity ease-in-out .2s;
   overflow: hidden;
   cursor: pointer;

@@ -2,6 +2,8 @@
   outline: none;
   background: none;
   padding: 14px 64px;
+  -webkit-transition: opacity ease-in-out .2s;
+  -o-transition: opacity ease-in-out .2s;
   transition: opacity ease-in-out .2s;
   border: 2px solid #ffffff;
   border-radius: 2px;
