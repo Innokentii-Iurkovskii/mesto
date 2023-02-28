@@ -3,4 +3,5 @@
   color: var(--text-color);
   background: #000000;
   min-width: 320px;
+  position: relative;
 }
