@@ -22,3 +22,4 @@
 @import url(../blocks/photo-gallery/__like-button/photo-gallery__like-button.css);
 @import url(../blocks/photo-gallery/__like-button/_active/photo-gallery__like-button_active.css);
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
