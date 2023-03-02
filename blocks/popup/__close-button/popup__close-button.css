@@ -10,7 +10,6 @@
   -o-transition: opacity ease-in-out .2s;
   transition: opacity ease-in-out .2s;
   border: none;
-  background: none;
   outline: none;
   padding: 0;
   background: url(../../../images/close-icon.svg);
