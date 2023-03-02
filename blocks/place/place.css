@@ -1,6 +1,5 @@
-.photo-gallery__item {
+.place {
   background: #ffffff;
-  min-height: 361px;
   border-radius: 10px;
   overflow: hidden;
 }

@@ -1,9 +1,0 @@
-.header_place_page {
-  margin: 0 19px;
-}
-
-@media screen and (max-width: 767px) {
-  .header_place_page {
-    margin: 0;
-  }
-}
