@@ -26,50 +26,7 @@
         <button type="button" class="profile__add-button" aria-label="Добавить фотографию"></button>
       </section>
       <section class="photo-gallery">
-        <ul class="photo-gallery__list">
-          <li class="place">
-            <img src="./images/karachayevsk.jpg" alt="Фотография Карачаевска" class="place__image">
-            <div class="place__info">
-              <h2 class="place__name">Карачаевск</h2>
-              <button type="button" class="place__like-button" aria-label="Поставить лайк"></button>
-            </div>
-          </li>
-          <li class="place">
-            <img src="./images/mount-elbrus.jpg" alt="Фотография Горы Эльбрус" class="place__image">
-            <div class="place__info">
-              <h2 class="place__name">Гора Эльбрус</h2>
-              <button type="button" class="place__like-button" aria-label="Поставить лайк"></button>
-            </div>
-          </li>
-          <li class="place">
-            <img src="./images/dombay.jpg" alt="Фотография Домбая" class="place__image">
-            <div class="place__info">
-              <h2 class="place__name">Домбай</h2>
-              <button type="button" class="place__like-button" aria-label="Поставить лайк"></button>
-            </div>
-          </li>
-          <li class="place">
-            <img src="./images/mount-elbrus.jpg" alt="Фотография Горы Эльбрус" class="place__image">
-            <div class="place__info">
-              <h2 class="place__name">Гора Эльбрус</h2>
-              <button type="button" class="place__like-button" aria-label="Поставить лайк"></button>
-            </div>
-          </li>
-          <li class="place">
-            <img src="./images/dombay.jpg" alt="Фотография Домбая" class="place__image">
-            <div class="place__info">
-              <h2 class="place__name">Домбай</h2>
-              <button type="button" class="place__like-button" aria-label="Поставить лайк"></button>
-            </div>
-          </li>
-          <li class="place">
-            <img src="./images/karachayevsk.jpg" alt="Фотография Карачаевска" class="place__image">
-            <div class="place__info">
-              <h2 class="place__name">Карачаево-Черкесия</h2>
-              <button type="button" class="place__like-button" aria-label="Поставить лайк"></button>
-            </div>
-          </li>
-        </ul>
+        <ul class="photo-gallery__list"></ul>
       </section>
     </main>
     <footer class="footer">
@@ -87,6 +44,15 @@
       <button type="button" class="popup__close-button" aria-label="Закрыть попап"></button>
     </div>
   </div>
+  <template id="place-template">
+    <li class="place">
+      <img src="" alt="Фотография места" class="place__image">
+      <div class="place__info">
+        <h2 class="place__name"></h2>
+        <button type="button" class="place__like-button" aria-label="Поставить лайк"></button>
+      </div>
+    </li>
+  </template>
   <script src="./scripts/index.js"></script>
 </body>
 </html>

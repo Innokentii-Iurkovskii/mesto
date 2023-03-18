@@ -9,6 +9,34 @@ let popupCloseButton = page.querySelector('.popup__close-button');
 // Находим поля формы в DOM
 let popupName = page.querySelector('.popup__input_type_name');
 let popupDescription = page.querySelector('.popup__input_type_description');
+let photoLikeButtons = page.querySelectorAll('.place__like-button');
+// Массив карточек
+const initialCards = [
+  {
+    name: 'Архыз',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+  },
+  {
+    name: 'Челябинская область',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+  },
+  {
+    name: 'Иваново',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+  },
+  {
+    name: 'Камчатка',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+  },
+  {
+    name: 'Холмогорский район',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+  },
+  {
+    name: 'Байкал',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+  }
+]; 
 
 //Функция открытия попапа и подставление в value информации из профиля
 function openPopup() {
@@ -21,14 +49,10 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove('popup_opened');
 }
-// Обработчик «отправки» формы, хотя пока
-// она никуда отправляться не будет
+// Обработчик «отправки» формы
 function handleFormSubmit (evt) {
   evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
-                                              // Так мы можем определить свою логику отправки.
-                                              // О том, как это делать, расскажем позже.
 
-  // Вставьте новые значения с помощью textContent
   profileName.textContent = popupName.value;
   profileDescription.textContent = popupDescription.value;
   closePopup();
@@ -42,10 +66,8 @@ popupCloseButton.addEventListener('click', closePopup)
 popupForm.addEventListener('submit', handleFormSubmit); 
 
 //Добавляем-удаляем модификатор у лайков
-//В ревью сказали закоментировать, пока не нужно ставить лайки
-// let photoLikeButtons = page.querySelectorAll('.place__like-button');
-// for (let i = 0; i < photoLikeButtons.length; i++) {
-//   photoLikeButtons[i].addEventListener("click", function() {
-//     photoLikeButtons[i].classList.toggle("place__like-button_active");
-//   });
-// }
+for (let i = 0; i < photoLikeButtons.length; i++) {
+  photoLikeButtons[i].addEventListener("click", function() {
+    photoLikeButtons[i].classList.toggle("place__like-button_active");
+  });
+}
