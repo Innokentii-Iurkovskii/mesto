@@ -131,6 +131,7 @@ function handleFormAddSubmit (evt) {
 
   gallery.prepend(createCard(item));
   popupFormParent.reset();
+  closePopup(popupFormParent.closest('.popup'));
   evt.preventDefault();
 }
 // Функция подстановки значений из профиля в инпуты формы редактирования профиля
@@ -166,6 +167,6 @@ popupFormAdd.addEventListener('submit', handleFormAddSubmit);
 for (let i = 0; i < popupCloseButton.length; i++) {
   popupCloseButton[i].addEventListener('click', function (event) {
     const parentPopup = event.target.closest('.popup');
-    parentPopup.classList.remove('popup_opened');
+    closePopup(parentPopup);
   });
 }
