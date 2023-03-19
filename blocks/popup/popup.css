@@ -1,4 +1,7 @@
 .popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #00000080;
   position: fixed;
   top: 0;
@@ -11,5 +14,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s opacity ease-in-out, .2s visibility ease-in-out;
+  overflow: hidden;
 }

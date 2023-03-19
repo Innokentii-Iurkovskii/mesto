@@ -33,7 +33,7 @@
       <p class="footer__copyright">© 2020 Mesto Russia</p>
     </footer>
   </div>
-  <div class="popup">
+  <div class="popup popup_type_edit">
     <div class="popup__container">
       <form class="popup__form" method="get" action="#" name="edit-form">
         <h2 class="popup__title">Редактировать профиль</h2>
@@ -44,13 +44,34 @@
       <button type="button" class="popup__close-button" aria-label="Закрыть попап"></button>
     </div>
   </div>
-  <template id="place-template">
+  <div class="popup popup_type_add">
+    <div class="popup__container">
+      <form class="popup__form" method="get" action="#" name="edit-form">
+        <h2 class="popup__title">Новое место</h2>
+        <input placeholder="Название" name="name" type="text" class="popup__input popup__input_type_name" required>
+        <input placeholder="Ссылка на картинку" name="description" type="text" class="popup__input popup__input_type_description" required>
+        <button type="submit" class="popup__save-button" aria-label="Сохранить форму">Создать</button>
+      </form>
+      <button type="button" class="popup__close-button" aria-label="Закрыть попап"></button>
+    </div>
+  </div>
+  <div class="popup popup_type_photo">
+    <div class="popup__container">
+      <figure class="popup__image-box">
+        <img class="popup__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="Фото места">
+        <figcaption class="popup__image-caption">Место</figcaption>
+      </figure>
+      <button type="button" class="popup__close-button" aria-label="Закрыть попап"></button>
+    </div>
+  </div>
+  <template class="place-template">
     <li class="place">
-      <img src="" alt="Фотография места" class="place__image">
+      <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="Фото места" class="place__image">
       <div class="place__info">
-        <h2 class="place__name"></h2>
+        <h2 class="place__name">Место</h2>
         <button type="button" class="place__like-button" aria-label="Поставить лайк"></button>
       </div>
+      <button type="button" class="place__remove-button" aria-label="Удалить место"></button>
     </li>
   </template>
   <script src="./scripts/index.js"></script>

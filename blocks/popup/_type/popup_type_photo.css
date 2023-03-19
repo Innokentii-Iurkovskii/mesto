@@ -1,0 +1,11 @@
+.popup_type_photo {
+  background: #000000e6;
+}
+
+.popup_type_photo .popup__container {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
