@@ -13,9 +13,10 @@
   transition: opacity ease-in-out .2s;
   cursor: pointer;
   color: #ffffff;
-  border: none;
+  border: 1px solid #000000;
   outline: none;
   min-width: 358px;
+  box-sizing: border-box;
 }
 
 .popup__save-button:hover {
