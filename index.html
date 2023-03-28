@@ -37,17 +37,15 @@
     <div class="popup__container">
       <form class="popup__form" method="get" action="#" name="edit-form" novalidate>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <div class="form__set">
-          <label class="popup__form-field">
-            <input placeholder="Введите имя" name="name-input" type="text" class="popup__input popup__input_type_name" required minlength="2" maxlength="40">
-            <span class="popup__input-error name-input-error"></span>
-          </label>
-          <label class="popup__form-field">
-            <input placeholder="Введите описание" name="description-input" type="text" class="popup__input popup__input_type_description" required minlength="2" maxlength="200">
-            <span class="popup__input-error description-input-error"></span>
-          </label>
-          <button type="submit" class="popup__save-button" aria-label="Сохранить форму">Сохранить</button>
-        </div>
+        <label class="popup__form-field">
+          <input placeholder="Введите имя" name="name-input" type="text" class="popup__input popup__input_type_name" required minlength="2" maxlength="40">
+          <span class="popup__input-error name-input-error"></span>
+        </label>
+        <label class="popup__form-field">
+          <input placeholder="Введите описание" name="description-input" type="text" class="popup__input popup__input_type_description" required minlength="2" maxlength="200">
+          <span class="popup__input-error description-input-error"></span>
+        </label>
+        <button type="submit" class="popup__save-button" aria-label="Сохранить форму">Сохранить</button>
       </form>
       <button type="button" class="popup__close-button" aria-label="Закрыть попап"></button>
     </div>
